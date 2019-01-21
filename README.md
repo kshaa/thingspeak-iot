@@ -10,16 +10,14 @@ This code/sketch implements:
 - The payload sent to ThingSpeak fills a "field" in a "channel" with random integers from 0 to 1000
 
 # Wiring
-Esp8266 | Arduino 
-— — — — — — — — -
-     RX | 11 
-     TX | 10 
-    GND | GND (same)
-    VCC | 5v (same) 
-  CH_PD | 5v (same) 
- GPIO 0 | None (same) 
- GPIO 2 | None (same)
+| ESP8266 | Arduino |
+|---------|---------|
+| RX      | 11      |
+| TX      | 10      |
+| GND     | GND     |
+| VCC     | 3.3V    |
+| CH_PD   | 3.3V    |
 
 # Configuration
 `environment.sample.cpp` contains hardcoded configurations/secrets.  
-Populate the file and move it to `environment.cpp`.  
+Populate the file and move it to `environment.cpp`.
